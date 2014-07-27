@@ -44,6 +44,7 @@ YUI.add('moodle-mod_oublog-accordion', function(Y) {
                             tab.title = tab.one('.oublog_statsview_title h2');
                             tab.content = tab.one('.oublog_statsview_content');
                             tab.number = counter;
+                            if (tab.title == null) return;
                             tab.title.setAttribute('aria-controls', tab.content.generateID());
                             tab.title.setAttribute('role', 'tab');
 
